@@ -1,91 +1,32 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.css'
+import React from "react"
+import Image from "next/image";
+// import PopularProducts from "@/components/pop-products";
+import Pools from "@/components/pool-intex";
 
-const inter = Inter({ subsets: ['latin'] })
+// images
+import mainImg from '../public/assets/imgs/main-img.svg';
+import Pool from "@/components/pool-intex";
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+const Home = () => {
+    return(
+        <main>
+            {/*  first section  */}
+            <div className="first-section">
+                <div className="container bg-neutral-50 mx-auto mb-32 flex items-center rounded-2xl">
+                    <div className="grid-rows-6 w-full my-24 pl-8">
+                        <div className="title text-5xl text-zinc-800 mb-4 font-bold">Бассейны от intex в Ташкенте</div>
+                        <p className="text text-textColor w-9/12 mb-12">Бассейны от intex - доступная по цене, качественная, надежная и экологически чистая продукция, которая предназначена для приятного отдыха всей семьи.</p>
+                        <button type="submit" className="bg-blue-900 text-white rounded-xl py-4 px-6">Заказать звонок</button>
+                    </div>
+                    <div className="grid-rows-6 w-full">
+                        <Image src={mainImg} className='ml-auto'/>
+                    </div>
+                </div>
+            </div>
+            {/* End of first section */}
+            {/* <PopularProducts /> */}
+            <Pool />
+        </main>
+    )   
 }
+export default Home
