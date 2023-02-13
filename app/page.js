@@ -1,11 +1,10 @@
 import React from "react"
 import Image from "next/image";
 // import PopularProducts from "@/components/pop-products";
-import Pools from "@/components/pool-intex";
+import PoolIntex from "@/components/pool-intex";
 
 // images
 import mainImg from '../public/assets/imgs/main-img.svg';
-import Pool from "@/components/pool-intex";
 
 const Home = () => {
     return(
@@ -25,7 +24,7 @@ const Home = () => {
             </div>
             {/* End of first section */}
             {/* <PopularProducts /> */}
-            <Pool />
+            <PoolIntex />
         </main>
     )   
 }

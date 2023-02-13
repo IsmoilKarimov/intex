@@ -72,19 +72,19 @@ const Footer = () => {
                     <div className="title font-bold text-lg mb-6">Адрес</div>
                     <ul className="font-medium">
                         <li className="mb-4 flex items-start">
-                            <Image src={location} />
+                            <Image src={location} alt=""/>
                             <p className="ml-3 w-72">Улица Пахлавона Махмуда, Яшнабадский район, город Ташкент</p>
                         </li>
                         <li className="mb-4 flex items-center">
-                            <Image src={phone} />
+                            <Image src={phone} alt=""/>
                             <p className="ml-3">+998 (90) 128 81 82</p>
                         </li>
                          <li className="mb-4 flex items-center">
-                            <Image src={email} />
+                            <Image src={email} alt=""/>
                             <p className="ml-3">Intex@gmail.com</p>
                         </li>
                         <li className="mb-4 flex items-center">
-                            <Image src={time} />
+                            <Image src={time} alt=""/>
                             <p className="ml-3">10:00 - 22:00 Без выходных</p>
                         </li>
                     </ul>

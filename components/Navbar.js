@@ -41,7 +41,7 @@ const Navbar = () => {
                     <ul className="navbar flex items-center font-medium">
                         <li className="flex items-center px-3">
                             <span className="mr-1 cursor-pointer"><Link href="#">Категории</Link></span>
-                            <Image src={arrowBottom} />
+                            <Image src={arrowBottom} alt=""/>
                         </li>
                         <li className="px-4 ml-2 cursor-pointer"><Link href="#">Популярное</Link></li>
                         <li className="px-4 cursor-pointer"><Link href="#">Новинки</Link></li>
@@ -49,19 +49,19 @@ const Navbar = () => {
                         
                     </ul>
                     <div className="search flex items-center bg-white py-2 px-3 rounded-xl w-80 ml-9 cursor-pointer">
-                        <Image src={search} alt='' className="mr-2"/>
+                        <Image src={search} alt="" className="mr-2"/>
                         <input type="text" placeholder="Поиск" className="w-11/12" />
                     </div>
                     <div className="backet ml-20x cursor-pointer">
-                        <Image src={backet} alt=''/>
+                        <Image src={backet} alt=""/>
                     </div>
                     <div className="user cursor-pointer">
-                        <Image src={user} alt=''/>
+                        <Image src={user} alt=""/>
                     </div>
                     <div className="lang bg-white py-2 px-3 flex items-center rounded-lg cursor-pointer">
-                        <Image src={lang} className='mr-2' alt=''/>
+                        <Image src={lang} className='mr-2' alt=""/>
                         <span className="mr-2">Ru</span>
-                        <Image src={arrowBottom} />
+                        <Image src={arrowBottom} alt=""/>
                     </div>
                 </div>
             </nav>
