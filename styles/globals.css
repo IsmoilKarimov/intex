@@ -36,3 +36,19 @@ select {
     outline: none;
 }
 
+@layer utilities {
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      @apply appearance-none;
+    }
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown:active .dropdown-menu-lang {
+    display: block;
+}
+
+
