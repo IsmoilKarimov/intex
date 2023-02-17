@@ -10,7 +10,7 @@ const PoolIntex = () => {
     return ( 
         <>
             <div className="pool container bg-neutral-50 mx-auto mb-40 rounded-2xl relative">
-                <div className="title pt-10 pl-5 font-bold text-3xl mb-4">Бассейны от INTEX в Ташкенте</div>../
+                <div className="title pt-10 pl-5 font-bold text-3xl mb-4">Бассейны от INTEX в Ташкенте</div>
                 <div className="text title pl-5 text-textColor text-lg mb-32">Бассейны от intex отличаются обширным перечнем преимуществ, из которых можно выделить самые важные:</div>
                 <div>
                     <Image src={easypool} alt="" className="mx-auto" />

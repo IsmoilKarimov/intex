@@ -43,12 +43,22 @@ select {
     }
 }
 
+.dropdown:hover .arrow-bottom {
+    transform: rotate(-180deg);
+    transition: 0.4s;
+}
+
 .dropdown:hover .dropdown-menu {
     display: block;
 }
 
-.dropdown:active .dropdown-menu-lang {
+/* .dropdown .dropdown-menu-lang {
+    display: none;
+    overflow: hidden;
+} */
+
+/* .dropdown:active .dropdown-menu-lang {
     display: block;
-}
+} */
 
 

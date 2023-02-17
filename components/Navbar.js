@@ -15,6 +15,7 @@ import eng from '../public/assets/imgs/usa.svg'
 
 const Navbar = () => {
     return(
+        <>
         <div className='bg-neutral-50 w-full mb-10'>    
             <div className='top container mx-auto flex justify-between py-3 text-sm font-medium text-textColor'>
                 <span className={styles.title}>10:00 - 22:00 Без выходных</span>
@@ -45,7 +46,7 @@ const Navbar = () => {
                         <li className="dropdown relative">
                             <button className="flex items-center px-3 py-3">
                                 <span className="mr-1 cursor-pointer"><Link href="#">Категории</Link></span>
-                                <svg class="fill-current h-4 w-4 text-colorBlue cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                                <svg class="arrow-bottom fill-current h-4 w-4 text-colorBlue cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                             </button>
                             <ul className="dropdown-menu drop-shadow-md absolute hidden bg-white text-neutral-700 pt-1 rounded-xl w-72 ml-5 font-normal">
                                 <li>
@@ -81,32 +82,33 @@ const Navbar = () => {
                         <button className="flex items-center">
                             <Image src={ru} className='mr-2' alt=""/>
                             <span className="mr-2">Ru</span>
-                            <svg class="fill-current h-4 w-4 text-colorBlue cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                            <svg className="arrow-bottom fill-current h-4 w-4 text-colorBlue cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                         </button>
-                        <ul className=" dropdown-menu-lang drop-shadow-md absolute hidden bg-white text-neutral-700 mt-2.5 py-1 rounded-xl w-full font-normal left-0">
-                                <li>
-                                    <Link href="#" className="flex rounded-xl bg-white active:bg-white py-1 px-4">
-                                        <Image src={uz} className='mr-2' alt=""/>
-                                        <span className="mr-2">Uz</span>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className="flex rounded-xl bg-white active:bg-white py-1 px-4">
-                                        <Image src={ru} className='mr-2' alt=""/>
-                                        <span className="mr-2">Ru</span>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className="flex rounded-xl bg-white active:bg-white py-1 px-4">
-                                        <Image src={eng} className='mr-2' alt=""/>
-                                        <span className="mr-2">Eng</span>
-                                    </Link>
-                                </li>
-                            </ul>
+                        <ul className="dropdown-menu drop-shadow-sm absolute hidden bg-white text-neutral-700 mt-2 py-1 rounded-xl w-full font-normal left-0">
+                            <li>
+                                <Link href="#" className="flex rounded-xl bg-white active:bg-white py-1 px-4">
+                                    <Image src={uz} className='mr-2' alt=""/>
+                                    <span className="mr-2">Uz</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#" className="flex rounded-xl bg-white active:bg-white py-1 px-4">
+                                    <Image src={ru} className='mr-2' alt=""/>
+                                    <span className="mr-2">Ru</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#" className="flex rounded-xl bg-white active:bg-white py-1 px-4">
+                                    <Image src={eng} className='mr-2' alt=""/>
+                                    <span className="mr-2">Eng</span>
+                                </Link>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
         </div>
+        </>
     )
 }
 export default Navbar

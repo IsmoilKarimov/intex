@@ -1,12 +1,14 @@
-// import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Image from "next/image";
 import React from "react";
+// import { Carousel } from "react-responsive-carousel";
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 
 // imgs
 import imgOne from '../../public/assets/imgs/circle-pool.jpg'
 import fav from '../../public/assets/imgs/heart.svg'
-import arrowLeft from '../../public/assets/imgs/arrow-left.svg'
 import arrowRight from '../../public/assets/imgs/arrow-right.svg'
+import arrowLeft from '../../public/assets/imgs/arrow-left.svg'
 
 
 const PopularProducts = () => {
@@ -24,20 +26,20 @@ const PopularProducts = () => {
                         </span>
                     </div>
                 </div>
-                <div className="flex flex-row items-center justify-between">
+                <div className="flex flex-row items-center space-x-5">
                     <div className="box bg-white shadow-lg rounded-xl basis-1/4">
-                        <span>
+                        <div className="flex items-center justify-center">
                             <Image src={imgOne} alt=""/>
-                        </span>
-                        <div className="p-4 whitespace-nowrap">
-                            <div className="title font-bold text-lg mb-2 w-full">Каркасный прямоугольный бассейн</div>
-                            <div className="size">220х150х60см, 1662л</div>
-                            <div className="prize">
-                                <div className="oldprize">1 250 000 сум</div>
-                                <div className="newprize">1 200 000 сум</div>
+                        </div>
+                        <div className="p-4">
+                            <div className="title font-bold text-lg mb-2">Каркасный прямоугольный бассейн</div>
+                            <div className="size mb-2">220х150х60см, 1662л</div>
+                            <div className="prize mb-3">
+                                <div className="oldprize text-sm text-gray-400 line-through font-normal">1 250 000 сум</div>
+                                <div className=" font-medium">1 200 000 сум</div>
                             </div>
                             <div className="flex justify-between items-center">
-                                <button type="submit" className="bg-blue-900 text-white rounded-xl py-3 px-11 w-44 text-lg">В корзину</button>
+                                <button type="submit" className="bg-blue-900 text-white rounded-xl h-14 px-20 text-lg">В корзину</button>
                                 <div className="fav bg-colorBlue flex items-center justify-center w-14 h-14 rounded-xl ml-3 cursor-pointer">
                                     <Image src={fav} />
                                 </div>
@@ -45,6 +47,16 @@ const PopularProducts = () => {
                         </div>
                     </div>
                 </div>
+
+                {/* <Carousel
+                    showArrows={true}
+                    showIndicators={true}
+                    infiniteLoop={true}
+                    dynamicHeight={false}
+                >
+                    <h1>Carousel page</h1>
+                </Carousel> */}
+
             </div>
         </>
      );
