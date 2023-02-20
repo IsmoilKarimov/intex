@@ -1,6 +1,6 @@
 import React from "react"
 import PopularProducts from "@/components/home/pop-products";
-import PoolIntex from "@/components/home/pool-intex";
+import PoolIntex from "@/components/home/poolTashkent";
 import MainPage from "@/components/home/mainPage";
 import NewProducts from "@/components/home/new-products";
 import PurchseDiscount from "@/components/home/purchase-discount";

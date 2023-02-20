@@ -46,7 +46,7 @@ const Navbar = () => {
                         <li className="dropdown relative">
                             <button className="flex items-center px-3 py-3">
                                 <span className="mr-1 cursor-pointer"><Link href="#">Категории</Link></span>
-                                <svg class="arrow-bottom fill-current h-4 w-4 text-colorBlue cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                                <svg className="arrow-bottom fill-current h-4 w-4 text-colorBlue cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
                             </button>
                             <ul className="dropdown-menu drop-shadow-md absolute hidden bg-white text-neutral-700 pt-1 rounded-xl w-72 ml-5 font-normal">
                                 <li>

@@ -1,8 +1,14 @@
 import Image from "next/image";
 import React from "react";
-// import { Carousel } from "react-responsive-carousel";
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+// Import Swiper React components
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Navigation } from "swiper";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 // imgs
 import imgOne from '../../public/assets/imgs/circle-pool.jpg'
@@ -12,6 +18,7 @@ import arrowLeft from '../../public/assets/imgs/arrow-left.svg'
 
 
 const PopularProducts = () => {
+
     return ( 
         <>
             <div className="container mb-40 mx-auto">
@@ -26,7 +33,7 @@ const PopularProducts = () => {
                         </span>
                     </div>
                 </div>
-                <div className="flex flex-row items-center space-x-5">
+                {/* <div className="flex flex-row items-center space-x-5">
                     <div className="box bg-white shadow-lg rounded-xl basis-1/4">
                         <div className="flex items-center justify-center">
                             <Image src={imgOne} alt=""/>
@@ -46,16 +53,9 @@ const PopularProducts = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
-                {/* <Carousel
-                    showArrows={true}
-                    showIndicators={true}
-                    infiniteLoop={true}
-                    dynamicHeight={false}
-                >
-                    <h1>Carousel page</h1>
-                </Carousel> */}
+                
 
             </div>
         </>

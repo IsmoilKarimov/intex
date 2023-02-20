@@ -1,11 +1,11 @@
 import Image from "next/image";
-import Link from "next/link";
 
 // imgs
 import uzb from '../../public/assets/imgs/uzb.svg'
 import money from '../../public/assets/imgs/money.svg'
 import card from '../../public/assets/imgs/card.svg'
 import click from '../../public/assets/imgs/click.svg'
+
 
 const Payment = () => {
     return ( 
@@ -32,18 +32,21 @@ const Payment = () => {
                             </div>
                             <div className="font-medium text-lg w-full mb-5">2. Выберите способ оплаты</div>
                             <div className="w-full flex items-center space-x-5 mb-7">
-                                <Link href='#' className="basis-1/3 flex items-center ring-1 ring-zinc-300 p-4 rounded-lg w-full">
+                                <div className="payment basis-1/3 flex items-center ring-1 ring-zinc-300 p-4 rounded-lg w-full cursor-pointer">
+                                    <input type="radio" name="payment" id="cash" className="cursor-pointer hidden"/>
                                     <Image src={money} alt="" />
-                                    <span className="ml-3">Наличными</span>
-                                </Link>
-                                <Link href='#' className="basis-1/3 flex items-center ring-1 ring-zinc-300 p-4 rounded-lg w-full">
+                                    <label htmlFor="cash" className="ml-3 w-full cursor-pointer">Наличными</label>
+                                </div>
+                                <div className="payment basis-1/3 flex items-center ring-1 ring-zinc-300 p-4 rounded-lg w-full cursor-pointer">
+                                    <input type="radio" name="payment" id="uzcard" className="cursor-pointer hidden "/>
                                     <Image src={card} alt="" />
-                                    <span className="ml-3">Uzcard/Humo</span>
-                                </Link>
-                                <Link href='#' className="basis-1/3 flex items-center ring-1 ring-zinc-300 p-4 rounded-lg w-full">
+                                    <label htmlFor="uzcard" className="ml-3 w-full cursor-pointer">Uzcard/Humo</label>
+                                </div>
+                                <div className="payment basis-1/3 flex items-center ring-1 ring-zinc-300 p-4 rounded-lg w-full cursor-pointer">
+                                    <input type="radio" name="payment" id="payme" className="cursor-pointer hidden"/>
                                     <Image src={click} alt="" />
-                                    <span className="ml-3">Payme/Click</span>
-                                </Link>
+                                    <label htmlFor="payme" className="ml-3 w-full cursor-pointer">Payme/Click</label>
+                                </div>
                             </div>
                             <div className="font-medium text-lg w-full mb-5">3. Ваши детали доставки</div>
                             <div className="flex items-center space-x-5 mb-7 ">    

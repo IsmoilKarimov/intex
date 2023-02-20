@@ -1,4 +1,4 @@
-// import { Splide, SplideSlide } from "@splidejs/react-splide";
+
 import Image from "next/image";
 import React from "react";
 

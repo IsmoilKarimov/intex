@@ -36,7 +36,7 @@ select {
     outline: none;
 }
 
-@layer utilities {
+@layer base {
     input[type="number"]::-webkit-inner-spin-button,
     input[type="number"]::-webkit-outer-spin-button {
       @apply appearance-none;
@@ -52,13 +52,9 @@ select {
     display: block;
 }
 
-/* .dropdown .dropdown-menu-lang {
-    display: none;
-    overflow: hidden;
-} */
+.withLine {
+    max-width: 97%;
+}
 
-/* .dropdown:active .dropdown-menu-lang {
-    display: block;
-} */
 
 
